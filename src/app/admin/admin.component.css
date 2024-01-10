@@ -1,0 +1,120 @@
+body {
+	background-color: rgb(0, 0, 0);
+	color: white;
+	font-family: Arial, sans-serif;
+
+}
+header{
+	background-color: #00ff00;
+	text-align: center;
+}
+a{
+	text-size-adjust: 20px;
+	color: #000;
+	padding: 20px 20px;
+	border-radius: 5px;
+	text-decoration: none;
+	align-content: space-evenly;
+  }
+  a:hover{
+	
+	text-decoration: underline;
+	color: #000;
+  }
+.center{
+	display: flex;
+	justify-content: center;
+}
+.add{
+	display: flex;
+	justify-content: center;
+}
+.options{
+	margin-top: 1%;
+	display: flex;
+	justify-content: center;
+}
+
+.options button{
+	margin: .2%;
+}
+
+header {
+    background-color: #dbf26e;
+    background-image: linear-gradient(319deg, #16f601 0%, #68f378 37%, #1cfdd6 100%);
+    
+      padding: 15px;
+      color:#000;
+      text-align: center; 
+    }
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: 50px 0;
+	box-shadow: .4em .5em 1em .3em rgba(213, 255, 219,0.2); 
+}
+
+.product {
+	background-color: #222;
+	padding: 20px;
+	margin: 20px;
+	border-radius: 10px;
+	width: 300px;
+	text-align: center;
+}
+
+.product h3 {
+	color: aliceblue;
+	margin-top: 10px;
+}
+
+.product form label {
+	color: aliceblue;
+	display: block;
+	margin-top: 10px;
+}
+
+.product form input,
+.product form textarea {
+	display: block;
+	width: 100%;
+	padding: 5px;
+	border-radius: 5px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	background-color: #333;
+	border: none;
+	color: white;
+}
+button:hover{
+	color: aliceblue;
+}
+
+button {
+	background-color: #00ff00;
+	padding : 0;
+	margin : 0;
+	width : 250px;
+	height : 80px;
+	text-align: center;
+	top : 300px;
+	Left:400px;
+	border:3px solid #555;
+	border-radius:10px;
+	transition-duration: .60s;
+	background: url ("\assets\hdd-removebg-preview.png");
+
+}
+h4{
+	position: relative;
+}
+/* tr{
+	color: aliceblue;
+}
+
+*{
+	color: aliceblue;
+}  */
+

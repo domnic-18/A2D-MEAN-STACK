@@ -1,0 +1,23 @@
+    <div class="login-container" style="width: 500px;">
+
+        <form  #signupForm="ngForm" (ngSubmit)="signup(signupForm.value)">
+            <h1>Sign up</h1>
+            <br>
+            <input  type="text" id="utextbox"  name="name" placeholder="Username" [(ngModel)]="user.name" />
+            <input type="password" id="passwd-text-box"  name="pass"  placeholder="Password" [(ngModel)]="user.pass"/>
+            <input type="password" id="passwd-text-box" name="cpass" placeholder="Confirm Password" [(ngModel)]="cpass"/>
+            <input type="tel" name="phonenumber" placeholder="phone number"  [(ngModel)]="user.phonenumber"/>
+            <input type="text" name="street" placeholder="street"  [(ngModel)]="user.street"/>
+            <input type="area" name="area" placeholder="area"  [(ngModel)]="user.area"/>
+            <input type="state" name="state" placeholder="state"  [(ngModel)]="user.state"/>
+            <br>
+            <button class="button" onclick="signup()"><a routerLink="/login">Signup</a></button>
+            <br>
+            <br>
+            <p style="color:red">{{comment}}</p>
+            <p>
+                Already registered !!
+                <a class="sign" routerLink="/login" style="color: #13c82b;">Login to account</a>
+            </p>
+        </form>
+    </div>

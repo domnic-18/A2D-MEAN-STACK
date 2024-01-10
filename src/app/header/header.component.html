@@ -1,0 +1,14 @@
+<header>
+    <nav>
+        <ul>
+            <div class="logo">
+            </div>
+            <a routerLink="/home">Home</a> 
+            <a routerLink="/orders">Orders</a>
+            <a routerLink="/cart">Cart</a>
+            <span>{{totalitem}}</span>
+            <a routerLink="/faq">FAQ</a>
+            <a (click)="logout()" routerLink="/">Logout</a>
+        </ul>
+    </nav>
+</header>

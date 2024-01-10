@@ -1,0 +1,40 @@
+
+<app-header></app-header>
+    <div class="container">
+        <div class="">
+            <div class="card" *ngFor="let item of Orders.orders">
+                <br>
+                <ng-container >
+              <div class="card-header">
+                  <h4>Order Date:{{item.odate}}</h4>
+              </div>
+                <div class="card-body" >
+                  <div class="table-title">
+                      <h4>Summary</h4>
+                  </div>
+                  <table class="table table-striped table-hover table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Product Name</th>
+                        <th scope="col">Amount</th>
+                      </tr>
+                    </thead>
+                    <tbody *ngFor="let i of item.orderList">
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>{{i.name}}</td>
+                        <td>{{i.price}}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="card-footer">
+                  <h5>Grand Total: {{item.grandtotal}}</h5>
+              </div>
+              </ng-container>
+              </div>
+        </div>
+    </div>
+
+

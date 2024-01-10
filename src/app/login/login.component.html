@@ -1,0 +1,18 @@
+        <div class="login-container" >
+            <form #loginForm="ngForm" (ngSubmit)="login(loginForm.value)">
+                <h1>Log in to your Account</h1>
+                <br>
+                <input type="text" id="utextbox" placeholder="Username" name="name" [(ngModel)]="user.name" required/>
+                <br>
+                <input type="password" id="passwd-text-box" placeholder="Password" name="pass" [(ngModel)]="user.pass" required/>
+                <br/>
+                <button class="button" onclick="login()"><a routerLink="/home">Login</a></button>
+                <br>
+                <br>
+                <p style="color:red">{{comment}}</p>
+                <p>
+                    Not registered !!
+                    <a class="sign" routerLink="/signup" style="color: #13c82b;">Create an account</a>
+                </p>
+            </form>
+        </div>
